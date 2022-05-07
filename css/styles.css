@@ -225,6 +225,8 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms var(--main-animation);
 }
 .main-button:hover,
 .main-button:focus {
@@ -921,6 +923,8 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms var(--main-animation);
 }
 .submit-button:hover,
 .submit-button:focus {
