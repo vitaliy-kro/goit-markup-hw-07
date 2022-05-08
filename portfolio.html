@@ -19,30 +19,36 @@
   </head>
   <body>
     <!-- Шапка -->
-    <header class="header">
-      <div class="container main-nav">
-        <a lang="en" class="logo web" href="./index.html"
-          >Web<span class="logo studio">Studio</span></a
-        >
-        <nav class="navigation">
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a lang="en" class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
+        <nav class="page-header__navigation">
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav__item site-nav__item--first">
+              <a href="./index.html" class="site-nav__link">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item site-nav__item--last">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="auth-link top list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon" width="16" height="12">
+        <ul class="auth-list auth-list--head list">
+          <li class="auth-list__item auth-list__item--first">
+            <a href="mailto:info@devstudio.com" class="auth-list__link">
+              <svg class="auth-list__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon" width="10" height="16">
+          <li class="auth-list__item auth-list__item--last">
+            <a href="tel:+380961111111" class="auth-list__link">
+              <svg class="auth-list__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a
@@ -52,28 +58,40 @@
       </div>
     </header>
     <main>
-      <section class="products-portfolio">
-        <div class="container">
-          <h1 class="visually-hidden">Кнопки услуг</h1>
-          <ul class="products list buttons">
-            <li class="item"><button type="button" class="product-button all">Все</button></li>
-            <li class="item"><button type="button" class="product-button">Веб-сайты</button></li>
-            <li class="item"><button type="button" class="product-button">Приложения</button></li>
-            <li class="item"><button type="button" class="product-button">Дизайн</button></li>
-            <li class="item"><button type="button" class="product-button">Маркетинг</button></li>
+      <section class="portfolio-products">
+        <div class="portfolio-products__thumb container">
+          <h1 class="portfolio-products__title visually-hidden">Кнопки услуг</h1>
+          <ul class="list products-list">
+            <li class="products-list__item products-list__item--first">
+              <button type="button" class="product-list__button product-list__button--current">
+                Все
+              </button>
+            </li>
+            <li class="products-list__item">
+              <button type="button" class="product-list__button">Веб-сайты</button>
+            </li>
+            <li class="products-list__item">
+              <button type="button" class="product-list__button">Приложения</button>
+            </li>
+            <li class="products-list__item">
+              <button type="button" class="product-list__button">Дизайн</button>
+            </li>
+            <li class="products-list__item">
+              <button type="button" class="product-list__button">Маркетинг</button>
+            </li>
           </ul>
-          <ul class="products-cards list">
-            <li class="item">
-              <a class="card" href="#">
-                <div class="card-description-thumb">
+          <ul class="product-cards list">
+            <li class="product-cards__item">
+              <a class="card-link" href="#">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio1.jpg"
                     alt="Пример разработаного веб-сайта"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -81,23 +99,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 class="product-name">Технокряк</h2>
-                  <p class="product-description">Веб-сайт</p>
+                <div class="product-cards__text-thumb">
+                  <h2 class="product-cards__title">Технокряк</h2>
+                  <p class="product-cards__description">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="card link" href="#">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a class="card-link" href="#">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio2.jpg"
                     alt="Баскетболист отбирает мяч у другого игрока"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -105,25 +123,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 class="product-name">
+                <div class="product-cards__text-thumb">
+                  <h2 class="product-cards__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="product-description">Дизайн</p>
+                  <p class="product-cards__description">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="card">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a href="#" class="card-link">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio3.jpg"
                     alt="Логотип морского ресторана"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -131,23 +149,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 class="product-name">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="product-description">Приложение</p>
+                <div class="product-cards__text-thumb">
+                  <h2 class="product-cards__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="product-cards__description">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="card">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a href="" class="card-link">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio4.jpg"
                     alt="Чёрные большие наушники"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -155,23 +173,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 class="product-name">Проект <span lang="en">Prime</span></h2>
-                  <p class="product-description">Маркетинг</p>
+                <div class="product-cards__text-thumb">
+                  <h2 class="product-cards__title">Проект <span lang="en">Prime</span></h2>
+                  <p class="product-cards__description">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="card">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a href="#" class="card-link">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio5.jpg"
                     alt="Белая и коричневая коробка"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -179,23 +197,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 class="product-name">Проект <span lang="en">Boxes</span></h2>
-                  <p class="product-description">Приложение</p>
+                <div class="product-cards__text-thumb">
+                  <h2 class="product-cards__title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="product-cards__description">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="card">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a href="#" class="card-link">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio6.jpg"
                     alt="Монитор с изображением сайта"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -203,23 +221,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 lang="en" class="product-name">Inspirations has no Borders</h2>
-                  <p class="product-description">Дизайн</p>
+                <div class="product-cards__text-thumb">
+                  <h2 lang="en" class="product-cards__title">Inspirations has no Borders</h2>
+                  <p class="product-cards__description">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="card">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a href="#" class="card-link">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio7.jpg"
                     alt="Книга с картинками"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -227,23 +245,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 class="product-name">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="product-description">Маркетинг</p>
+                <div class="product-cards__text-thumb">
+                  <h2 class="product-cards__title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="product-cards__description">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="card">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a href="#" class="card-link">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio8.jpg"
                     alt="Белый лейбл"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -251,23 +271,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 lang="en" class="product-name">Проект <span lang="en">LAB</span></h2>
-                  <p class="product-description">Приложение</p>
+                <div class="product-cards__text-thumb">
+                  <h2 lang="en" class="product-cards__title">Проект <span lang="en">LAB</span></h2>
+                  <p class="product-cards__description">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="card">
-                <div class="card-description-thumb">
+            <li class="product-cards__item">
+              <a href="" class="card-link">
+                <div class="product-cards__thumb">
                   <img
-                    class="service-picture"
+                    class="product-cards__img"
                     width="370"
                     src="./images/portfolio9.jpg"
                     alt="Мужчина разрабатывает приложение"
                   />
-                  <div class="product-overlay">
-                    <p class="card-description-text">
+                  <div class="product-cards__overlay overlay">
+                    <p class="overlay__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения
                       <br />
@@ -275,9 +295,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-text">
-                  <h2 class="product-name" lang="en">Growing Business</h2>
-                  <p class="product-description">Приложение</p>
+                <div class="product-cards__text-thumb">
+                  <h2 class="product-cards__title" lang="en">Growing Business</h2>
+                  <p class="product-cards__description">Приложение</p>
                 </div>
               </a>
             </li>
