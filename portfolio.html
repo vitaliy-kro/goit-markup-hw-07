@@ -307,48 +307,50 @@
     </main>
     <!-- Футер  -->
     <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-adresses">
-          <a lang="en" href="./index.html" class="logo web footer"
-            >Web<span class="logo white">Studio</span></a
+      <div class="container footer__container">
+        <div class="footer__thumb">
+          <a lang="en" href="./index.html" class="logo logo--footer"
+            >Web<span class="logo__text logo__text--revers">Studio</span></a
           >
-          <address class="footer-adress">
-            <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="auth-link list">
-              <li class="footer-mail">
-                <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+          <address class="company-adress">
+            <p class="company__label">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="auth-list auth-list--footer list">
+              <li class="auth-list__item auth-list__item--bottom">
+                <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
               </li>
-              <li><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
+              <li class="auth-list__item">
+                <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-media">
-          <strong class="footer-media-text">Присоединяйтесь</strong>
-          <ul class="social list">
-            <li class="item">
-              <a class="social-media-icons icons-footer" href="https://instagram.com">
-                <svg class="icon" width="20" height="20">
+        <div class="footer__social-media">
+          <strong class="footer__media-text">Присоединяйтесь</strong>
+          <ul class="social-media list">
+            <li class="social-media__item social-media__item--first">
+              <a class="media-link media-link--footer" href="https://instagram.com">
+                <svg class="media-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="social-media-icons icons-footer" href="https://twitter.com">
-                <svg class="icon" width="20" height="20">
+            <li class="social-media__item">
+              <a class="media-link media-link--footer" href="https://twitter.com">
+                <svg class="media-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="social-media-icons icons-footer" href="https://facebook.com">
-                <svg class="icon" width="20" height="20">
+            <li class="social-media__item">
+              <a class="media-link media-link--footer" href="https://facebook.com">
+                <svg class="media-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="social-media-icons icons-footer" href="https://linkedin.com">
-                <svg class="icon" width="20" height="20">
+            <li class="social-media__item">
+              <a class="media-link media-link--footer" href="https://linkedin.com">
+                <svg class="media-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -356,18 +358,18 @@
           </ul>
         </div>
         <div class="mailing-list">
-          <strong class="subscribe-text">Подпишитесь на рассылку</strong>
-          <form name="subscribe-form" class="subscribe-form">
+          <strong class="mailing-list__text">Подпишитесь на рассылку</strong>
+          <form name="subscribe-form" class="mailing-list__form">
             <input
-              class="subscribe-mail"
+              class="mailing-list__mail"
               name="subscribe-mail"
               type="email"
               placeholder="E-mail"
               required
             />
-            <button type="submit" class="subscribe-button">
+            <button type="submit" class="button button--subscribe">
               Подписаться
-              <svg class="send-icon" width="24" height="24">
+              <svg class="mailing-list__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>

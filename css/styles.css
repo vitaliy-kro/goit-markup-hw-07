@@ -212,7 +212,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero__button {
+.button {
   padding: 10px 32px;
   min-width: 200px;
   border-radius: 4px;
@@ -226,14 +226,14 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
 
   transition: background-color 250ms var(--main-animation);
 }
-.hero__button:hover,
-.hero__button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--main-button-hover);
 }
 /* Переваги та працівники */
@@ -387,10 +387,7 @@ body {
 
   margin-left: 10px;
 }
-.social-media__item--first {
-  margin-left: 0;
-}
-.social-media__link {
+.media-link {
   display: flex;
   height: 100%;
   width: 100%;
@@ -402,12 +399,12 @@ body {
 
   transition: background-color 250ms var(--main-animation), color 250ms var(--main-animation);
 }
-.social-media__link:hover,
-.social-media__link:focus {
+.media-link:hover,
+.media-link:focus {
   color: var(--main-background-color);
   background-color: var(--accent-color);
 }
-.social-media__icon {
+.media-link__icon {
   display: block;
   fill: currentColor;
 }
@@ -523,23 +520,17 @@ body {
   justify-content: center;
   align-items: center;
 }
-.social-media__item--footer {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  margin-left: 10px;
-}
 .social-media__item--first {
   margin-left: 0;
 }
-.social-media__link--footer {
+.media-link--footer {
   background-color: var(--social-media-footer-background);
   color: var(--main-background-color);
 
   transition: background-color 250ms var(--main-animation);
 }
-.social-media__link--footer:hover,
-.social-media__link--footer:focus {
+.media-link--footer:hover,
+.media-link--footer:focus {
   background-color: var(--accent-color);
 }
 
@@ -582,27 +573,14 @@ body {
 
   color: var(--footer-link-color);
 }
-.mailing-list__button {
+.button--subscribe {
   display: flex;
   align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
 
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  min-width: 200px;
   border-radius: 4px;
-  border: initial;
-  cursor: pointer;
   padding: 10px 30px;
-  margin-left: 10px;
 
-  color: var(--white-title-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--accent-color);
+  margin-left: 10px;
 }
 .mailing-list__icon {
   fill: currentColor;
@@ -914,30 +892,9 @@ body {
   color: var(--accent-color);
 }
 
-.user-information__button {
+.button--submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 200px;
   padding: 10px 55px;
-  border-radius: 4px;
-  border: initial;
-
-  color: var(--white-title-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-
-  letter-spacing: 0.06em;
-
-  transition: background-color 250ms var(--main-animation);
-}
-.user-information__button:hover,
-.user-information__button :focus {
-  background-color: var(--main-button-hover);
 }
